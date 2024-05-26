@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navigate(page);
   }
 
-  document.querySelectorAll('nav a').forEach((link) => {
+  document.querySelectorAll('nav a[data-page]').forEach((link) => {
     link.addEventListener('click', onLinkClick);
   });
 
