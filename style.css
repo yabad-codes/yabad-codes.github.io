@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Start Header */
+
+header {
+  height: 70px;
+  line-height: 70px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  margin-bottom: 60px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading h1 {
+  font-weight: 700;
+  font-size: 27px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.heading h1:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  display: flex;
+  /* border: 1px solid red; */
+  justify-content: space-around;
+  align-items: center;
+  width: 30rem;
+}
+
+ul li {
+  text-transform: capitalize;
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1.5px solid transparent;
+}
+
+ul li a:hover {
+  color: #777;
+  border-bottom: 1.5px solid #777;
+}
+
+ul li a:active {
+  font-weight: 800;
+  font-size: 17px;
+}
+
+/* End Header */
+
+/* Start Main Content */
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content .text-center {
+  font-size: 65px;
+  margin-bottom: 25px;
+}
+
+.main-content .paragraph {
+  font-size: 18px;
+  color: #858585;
+  text-align: center;
+  width: 500px;
+  padding-top: 20px;
+}
+
+.heading2 {
+  margin-top: 80px;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: -0.04em;
+  margin-bottom: 50px;
+}
+
+/* End Main Content */
+
+/* Start Projects */
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #e4e4e4;
+  margin: 30px;
+  padding: 70px 50px;
+  width: 24em;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  /* display: block;
+  float: left; */
+}
+
+.project:hover {
+  background-color: #7777770e;
+  cursor: pointer;
+}
+
+.project-title {
+  padding: 0 0 20px 0;
+  font-size: large;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-title a {
+  text-decoration: none;
+  color: #5091e6;
+}
+
+.project-description {
+  max-width: 300px;
+  word-wrap: break-word;
+}
+
+/* End Projects */
+
+/* Start Quotes */
+
+.quote {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  color: #474747;
+  transition: all 0.5s ease-in-out;
+}
+
+.arabic {
+  font-family: 'Ruwudu', serif;
+  font-style: normal;
+}
+
+.quote:hover {
+  font-size: 16px;
+  cursor: default;
+}
+
+/* End Quotes */
+
+/* Start Connect */
+
+.connect p {
+  text-align: center;
+  letter-spacing: normal;
+  font-size: 17px;
+  font-weight: 600;
+  color: #474747;
+  padding-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.connect p a {
+  padding-left: 5px;
+  text-decoration: none;
+  color: #2a7ae2;
+  text-transform: capitalize;
+}
+
+.connect p a:hover {
+  text-decoration: underline;
+}
+
+/* End Connect */
+
+/* Start Footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  padding: 30px 30px 30px 30px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  color: #474747;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* End Footer */
+
+/* Start responsive */
+
+@media screen and (max-width: 800px) {
+  .heading h1 {
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+  }
+
+  .main-content .text-center {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  .heading2 {
+    font-size: 25px;
+  }
+}
+
+/* End responsive */

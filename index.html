@@ -1,1 +1,55 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ruwudu:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Yahya Abad</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="heading">
+          <h1 onclick="navigate('home')">Yahya ABAD</h1>
+          <nav>
+            <ul>
+              <li><a href="#home" data-page="home">Home</a></li>
+              <li><a href="#about" data-page="about">About</a></li>
+              <li><a href="#resume" data-page="resume">Resume</a></li>
+              <li>
+                <a href="https://github.com/yabad-codes" target="_blank"
+                  >Github</a
+                >
+              </li>
+              <li>
+                <a href="#podcasts" data-page="podcasts">Podcasts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main id="content"></main>
+    <footer>
+      <div class="footer">
+        <div class="container center">
+          <p>Made with love by yabad ♥</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="spa.js"></script>
+</html>
