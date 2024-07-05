@@ -227,7 +227,7 @@ ul li a:active {
 @media screen and (max-width: 800px) {
   .heading h1 {
     font-weight: 700;
-    font-size: 17px;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: -1px;
   }
