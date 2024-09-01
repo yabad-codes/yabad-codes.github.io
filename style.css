@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Start Header */
@@ -17,6 +17,7 @@ header {
 .container {
   max-width: 1200px;
   margin: auto;
+  padding: 0 15px;
 }
 
 .heading {
@@ -39,7 +40,6 @@ header {
 
 nav ul {
   display: flex;
-  /* border: 1px solid red; */
   justify-content: space-around;
   align-items: center;
   width: 30rem;
@@ -81,18 +81,21 @@ ul li a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .main-content .text-center {
   font-size: 65px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .main-content .paragraph {
   font-size: 18px;
   color: #858585;
   text-align: center;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   padding-top: 20px;
 }
 
@@ -102,6 +105,7 @@ ul li a:active {
   font-size: 30px;
   letter-spacing: -0.04em;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 /* End Main Content */
@@ -125,10 +129,9 @@ ul li a:active {
   margin: 30px;
   padding: 70px 50px;
   width: 24em;
+  max-width: 100%;
   border-radius: 5px;
   transition: all 0.3s ease;
-  /* display: block;
-  float: left; */
 }
 
 .project:hover {
@@ -164,10 +167,11 @@ ul li a:active {
   padding-bottom: 20px;
   color: #474747;
   transition: all 0.5s ease-in-out;
+  margin: 0 auto;
 }
 
 .arabic {
-  font-family: 'Ruwudu', serif;
+  font-family: "Ruwudu", serif;
   font-style: normal;
 }
 
@@ -226,10 +230,7 @@ ul li a:active {
 
 @media screen and (max-width: 800px) {
   .heading h1 {
-    font-weight: 700;
-    font-size: 15px;
-    text-transform: uppercase;
-    letter-spacing: -1px;
+    display: none;
   }
 
   .main-content .text-center {
@@ -240,27 +241,82 @@ ul li a:active {
   .heading2 {
     font-size: 25px;
   }
+
+  nav ul {
+    width: auto;
+  }
+
+  ul li a {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .heading {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .heading h1 {
     display: none;
   }
 
   nav {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
   }
 
   nav ul {
-    display: flex;
-    /* border: 1px solid red; */
+    width: 80%;
     justify-content: space-between;
-    align-items: center;
-    width: 30rem;
+    margin: 0 auto;
+  }
+  
+  nav ul li a {
+    font-size: 11px;
+  }
+
+  ul li a:active {
+    font-weight: 800;
+    font-size: 12px;
+  }
+
+  .project {
+    margin: 15px;
+    padding: 40px 20px;
+  }
+
+  .project .project-title {
+    font-size: 13px;
+  }
+
+  .project .project-description {
+    font-size: 12px;
+  }
+
+  .main-content .text-center {
+    font-size: 24px;
+  }
+
+  .main-content .paragraph {
+    font-size: 12px;
+  }
+
+  .heading2 {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .quote {
+    font-size: 9px;
+  }
+
+  .connect p {
+    font-size: 12px;
+  }
+
+  .footer {
+    font-size: 10px;
   }
 }
 
