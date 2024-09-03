@@ -34,10 +34,6 @@ header {
   cursor: pointer;
 }
 
-.heading h1:hover {
-  text-decoration: underline;
-}
-
 nav ul {
   display: flex;
   justify-content: space-around;
