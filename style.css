@@ -11,7 +11,6 @@ header {
   height: 70px;
   line-height: 70px;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
-  margin-bottom: 60px;
 }
 
 .container {
@@ -84,6 +83,7 @@ ul li a:active {
   font-size: 50px;
   margin-bottom: 25px;
   text-align: center;
+  margin-top: 60px;
 }
 
 .main-content .paragraph {
@@ -204,6 +204,31 @@ ul li a:active {
 
 /* End Connect */
 
+/* Start resume styling */
+.resume {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.yabad-resume {
+  width: 100%;
+  max-width: 1200px;
+  border: 1px solid #47474722;
+}
+
+.get-resume {
+  color: #474747;
+  margin: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+/* End resume styling */
+
 /* Start Footer */
 
 .footer {
@@ -293,6 +318,10 @@ ul li a:active {
   .footer {
     font-size: 12px;
   }
+
+  .get-resume {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -361,6 +390,10 @@ ul li a:active {
 
   .footer {
     font-size: 10px;
+  }
+
+  .get-resume {
+    font-size: 13px;
   }
 }
 
