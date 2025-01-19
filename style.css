@@ -219,7 +219,9 @@ ul li a:active {
 
 .get-resume {
   color: #474747;
-  margin: 30px;
+  background-color: rgba(255, 255, 0, 0.616);
+  margin: 25px;
+  padding: 7px;
   font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
